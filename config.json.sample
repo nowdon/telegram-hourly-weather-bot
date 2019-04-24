@@ -1,0 +1,5 @@
+{
+    "bot_token":"YOUR BOT TOKEN",
+    "chat_id":YOUR CHAT ID,
+    "url":"https://tenki.jp/forecast/6/30/6200/27141/1hour.html"
+}
