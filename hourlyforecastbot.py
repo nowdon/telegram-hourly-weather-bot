@@ -24,5 +24,8 @@ current_hour = datetime.now().hour
 i = 1
 for weather in hourly_weathers.select('p'):
     if i == current_hour + 1:
-        bot.send_message(chat_id=conf["chat_id"], text=weather.string)
+        mes = '1時間後の天気は ' + weather.string + ' だぞ\n' + conf["url"]
+#        if '雨' in weather.string:
+#           mes = 'そろそろ雨が降るかもしれないぞ\n' + conf["url"]
+        bot.send_message(chat_id=conf["chat_id"], text=mes)
     i += 1
